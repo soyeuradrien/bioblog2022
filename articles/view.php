@@ -1,4 +1,4 @@
-<?php include "../vendors/autoload.php" ?>
+<?php include "../vendors/autoload.php"; ?>
 <?php require_once "../helpers/form-helper.php"; ?>
 
 <!DOCTYPE html>
@@ -24,11 +24,11 @@
                                 try {
                                     $quill = new \DBlackborough\Quill\Render($article["content"]);
                                     $content = $quill->render();
-                                } catch(Exception $e){
+                                } catch(Exception $e) {
                                     $content = $article["content"];
                                 }
                             ?>
-                            <p class="card-text"><?= $article["content"] ?></p>
+                            <p class="card-text"><?= $content ?></p>
                         </div>
                     </article>
                 </div>

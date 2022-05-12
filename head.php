@@ -15,8 +15,8 @@
     <?php if(isset($site_description)): ?>
         <meta property="og:description" content="<?= $site_description ?>" />
     <?php endif; ?>
-    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqgYX1R_WTACJuB8JPKVJJ0-MfKNEv9sW8ig&usqp=CAU" ?>
-    <meta property="article:author" content="<?=$appName ?>" />
+    <meta property="og:image" content="https://planetezerodechet.fr/wp-content/uploads/2020/07/manger-bio-nature-spains-1152x768.jpg" />
+    <meta property="article:author" content="<?= $appName ?>" />
 
     <meta name="twitter:site" content="<?= $appName ?>" />
     <meta name="twitter:card" content="summary" />

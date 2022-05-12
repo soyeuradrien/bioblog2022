@@ -3,7 +3,7 @@
 <?php $title="Création article"; $site_description="Venez créer votre propre article qui conserne le BIO"; require "../head.php"; ?>
 <body>
     <style>
-        .ql-container.ql-snow.-error{
+        .ql-container.ql-snow.-error {
             border: solid red;
         }
     </style>
@@ -80,10 +80,10 @@
             }
         });
         var form = document.querySelector('form');
-        form.onsubmit = function(){
+        form.onsubmit = function(e) {
             var contentInput = document.querySelector('input[name=content]');
             var contentToSave = quill.getContents();
-            if (contentToSave.ops.length ===1 && Object.key(content.ops[0]).length === 1 && contentToSave.ops[0].insert.trim().length === 0){
+            if (contentToSave.ops.length === 1 && Object.keys(contentToSave.ops[0]).length === 1 && contentToSave.ops[0].insert.trim().length === 0) {
                 document.querySelector('#editor').className = 'ql-container ql-snow -error';
                 return false;
             } else {
